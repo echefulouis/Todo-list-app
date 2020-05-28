@@ -23,13 +23,16 @@
     <title>To Do List App</title>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark fixed">
+<nav class="navbar navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">TO DO LIST APP</a>
-        {#        <a class="navbar-brand" href="#">Home</a>#}
-        {#        <a class="navbar-brand" href="#">Creator's Github</a>#}
+         <a class="navbar-brand" href="#">
+    <img src="{% static 'images/github-brands.svg' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+    To-do List App
+  </a>
     </div>
 </nav>
+
+{#The content Block for functionality#}
     {% block content %}
 
 
@@ -37,7 +40,7 @@
 
     <footer>
 
-        <div style="margin: 20px;">
+        <div style="margin-bottom: 80px;">
 
         </div>
     </footer>

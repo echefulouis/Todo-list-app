@@ -9,3 +9,11 @@ class Todo(models.Model):
     def __str__(self):
         return self.text
 
+
+class Done(models.Model):
+    done_date=models.DateTimeField('Date Added')
+    done_text = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.done_text
+
