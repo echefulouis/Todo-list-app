@@ -44,7 +44,7 @@ def delete_todo(request, todo_id):
 
 def Done_todo(request, done_id):
     Done.objects.get(id=done_id).delete()
-    return HttpResponseRedirect ('/')
+    return HttpResponseRedirect('/')
 
 
 
